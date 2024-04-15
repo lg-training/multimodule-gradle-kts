@@ -20,7 +20,7 @@ subprojects {
         repositories {
             mavenLocal()
             maven {
-                url = https://maven.pkg.github.com/lg-training/multimodule-gradle-kts
+                url = "https://maven.pkg.github.com/lg-training/multimodule-gradle-kts"
             }
         }
     }

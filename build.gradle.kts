@@ -19,6 +19,13 @@ subprojects {
         }
         repositories {
             mavenLocal()
+            maven {
+                url = uri("https://maven.pkg.github.com/lg-training/multimodule-gradle-kts")
+               credentials {
+                username = System.getenv("GITHUB_ACTOR")
+                password = System.getenv("GITHUB_TOKEN")
+              }
+            }
         }
     }
 
